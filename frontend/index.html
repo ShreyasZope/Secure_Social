@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Social</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <button id="connect-button">Connect Metamask</button>
+    <div class="image-container">
+        <img src="social media on blockchain.png" alt="Image to like">
+        <div style="display: flex; align-items: center; margin-top: 10px;"> <!-- Adjusted margin-top for space -->
+            <button id="like-button">Like</button>
+            <p id="like-count" class="like-count"></p> <!-- Added class for like count -->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.0.17/dist/ethers.umd.js" charset="utf-8" type="text/javascript"></script>
+    <script type="module" src="./script/MetaConnect.js"></script>
+</body>
+</html>

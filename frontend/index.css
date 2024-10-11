@@ -1,0 +1,155 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #000, #330000);
+    color: white;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.container {
+    position: relative;
+    display: flex; /* Changed from block to flex */
+    flex-direction: row; /* Changed to row for horizontal alignment */
+    align-items: flex-start; /* Align items at the top */
+    padding: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+/* Connect Metamask Button */
+#connect-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #800000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.1s ease;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    z-index: 999;
+}
+
+#connect-button:hover {
+    background-color: #660000;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+}
+
+#connect-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+#connect-button span {
+    position: relative;
+    z-index: 2;
+}
+
+#connect-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+#connect-button:active:before {
+    width: 200%;
+    height: 200%;
+    opacity: 1;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    flex-direction: column; /* Align images vertically within the container */
+    margin-top: 100px;
+    justify-content: flex-start; /* Align items at the top */
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 50px; /* Space between images */
+}
+
+/* Like Button */
+#like-button {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    background-color: #800000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.1s ease;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+#like-button:hover {
+    background-color: #660000;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+}
+
+#like-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+#like-button span {
+    position: relative;
+    z-index: 2;
+}
+
+#like-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+#like-button:active:before {
+    width: 200%;
+    height: 200%;
+    opacity: 1;
+}
+
+/* Like Count */
+.like-count {
+    margin-left: 90px; /* Adjust this value as needed */
+    font-size: 12px;
+}
