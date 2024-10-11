@@ -1,0 +1,1 @@
+The likes are handled via blockchain transactions by nodes of the metamask account 
